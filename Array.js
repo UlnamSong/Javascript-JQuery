@@ -28,7 +28,7 @@ students.sort(function(left, right) {
 
 student = students.slice(0, 3);
 
-var output = 'Name\tTotal\tAverage\n;
+var output = 'Name\tTotal\tAverage\n';
 for (var i in students) {
   output += students[i].toString() + '\n';
 }

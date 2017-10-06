@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		window.onload = function () {
+			alert('Process - 0');
+			var header = document.createElement('h1');
+			var textNode = document.createTextNode('Hello  DOM');
+
+			header.appendChild(textNode);
+			document.body.appendChild(header);
+
+			var header1 = document.getElementById('header-1');
+			var header2 = document.getElementById('header-2');
+			header1.innerHTML = 'with getElementById()';
+			header2.innerHTML = 'with getElementById()';
+		};
+	</script>
+</head>
+<body>
+	<h1>Process - 1</h1>
+	<h1>Process - 2</h1>
+	<h1 id="header-1">Header</h1>
+	<h1 id="header-2">Header</h1>
+</body>
+</html>
